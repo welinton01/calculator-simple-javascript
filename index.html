@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">
+
+    <title>Hello World</title>
+
+    <style>
+      body {
+        border: 1px solid black;
+      }
+    </style>
+
+    <!-- Inline scripts are forbidden in Firefox OS apps (CSP restrictions),
+         so we use a script file. -->
+    <script src="app.js" defer></script>
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+
+  </head>
+
+  <body>
+    <form name="calc">
+    <table width="200" border="0">
+      
+      <tr>
+        <td colspan="4"><input type="text" name="visor" class="display"></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="7" onClick="botao(value);" class="btn"></td>
+        <td><input type="button" value="8" onClick="botao(value);" class="btn"></td>
+        <td><input type="button" value="9" onClick="botao(value);" class="btn"></td>
+        <td><input type="button" value="/" onClick="botao(value);" class="btn"></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="4" onClick="botao(value);" class="btn"></td>
+        <td><input type="button" value="5" onClick="botao(value);" class="btn"></td>
+        <td><input type="button" value="6" onClick="botao(value);" class="btn"></td>
+        <td><input type="button" value="*" onClick="botao(value);" class="btn"></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="1" onClick="botao(value);" class="btn"></td>
+        <td><input type="button" value="2" onClick="botao(value);" class="btn"></td>
+        <td><input type="button" value="3" onClick="botao(value);" class="btn"></td>
+        <td><input type="button" value="-" onClick="botao(value);" class="btn"></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="0" onClick="botao(value);" class="btn"></td>
+        <td><input type="button" value="=" onClick="calcule();" class="btn" id="btnresult"></td>
+        <td><input type="button" value="C" onClick="reset();" class="btn"></td>
+        <td><input type="button" value="+" onClick="botao(value);" class="btn"></td>
+      </tr>
+      
+    </table>
+    </form>
+    <!-- This code is in the public domain. Enjoy! -->
+    
+  </body>
+
+</html>
